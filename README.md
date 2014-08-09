@@ -4,9 +4,20 @@ For example, `lookup .git` will search for `./.git`, `../.git`,
 `../../.git`, and so on until `/` is reached. If the file is found, it
 will print its absolute path and exit, otherwise it will return 1.
 
+
+## Installation
+
+Not much to it:
+
+    make
+    
+    make install
+
+
 ## Usage
 
     lookup [-p] [-r] FILENAME
+
     
 ## Options 
 
