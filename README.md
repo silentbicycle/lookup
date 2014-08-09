@@ -10,5 +10,6 @@ will print its absolute path and exit, otherwise it will return 1.
     
 ## Options 
 
--p: only print the path for the parent directory
--r: print relative path (e.g. "../../../foo") not the absolute path
++ -p: only print the path for the parent directory
+
++ -r: print relative path (e.g. "../../../foo") not the absolute path
