@@ -84,7 +84,7 @@ static int run(config *cfg) {
     ino_t last = (ino_t)0;
 
     for (;;) {
-        size_t rem = PATH_MAX - offset;
+        int rem = PATH_MAX - offset;
         if (rem < snprintf(&buf[offset], rem, "%s", cfg->name)) {
             fprintf(stderr, "PATH_MAX exceeded\n");
             return 1;
