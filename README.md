@@ -5,7 +5,9 @@ For example, `lookup .git` will search for `./.git`, `../.git`,
 will print its absolute path and exit, otherwise it will return 1.
 
 
-## Installation
+## Installation and Dependencies
+
+This doen't depend on anything beyond POSIX.1-2001.
 
 Not much to it:
 
