@@ -137,7 +137,8 @@ static int print_path_name(config *cfg, char *path_buf) {
     if (cfg->relative) {
         printf("%s\n", path_buf);
     } else {
-        char *rp = realpath(path_buf, NULL);
+        char unused[PATH_MAX];
+        char *rp = realpath(path_buf, unused);
         if (rp == NULL) { err(1, "realpath"); }
         printf("%s\n", rp);
     }
