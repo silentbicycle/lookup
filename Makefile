@@ -36,7 +36,7 @@ PREFIX ?=	/usr/local
 INSTALL ?=	install
 RM ?=		rm
 
-install:
+install: ${PROJECT}
 	${INSTALL} -c ${PROJECT} ${PREFIX}/bin
 
 uninstall:
