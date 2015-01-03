@@ -48,7 +48,7 @@ static void usage(void) {
         LOOKUP_VERSION_MAJOR, LOOKUP_VERSION_MINOR, LOOKUP_VERSION_PATCH,
         LOOKUP_AUTHOR);
     printf("Usage: lookup [-d] [-r] FILENAME\n"
-        "  -d    directory only\n"
+        "  -p    parent directory only (not filename)\n"
         "  -r    relative path\n");
     exit(1);
 }
@@ -57,7 +57,7 @@ static bool proc_args(config *cfg, int argc, char **argv) {
     int a = 0;
     while ((a = getopt(argc, argv, "pr")) != -1) {
         switch (a) {
-        case 'p':           /* parent directory only only */
+        case 'p':           /* parent directory only */
             cfg->parent_only = true;
             break;
         case 'r':           /* relative path */

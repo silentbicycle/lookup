@@ -23,6 +23,6 @@ Not much to it:
     
 ## Options 
 
-+ -p: only print the path for the parent directory
++ -p: only print the parent directory name (not the filename)
 
 + -r: print relative path (e.g. "../../../foo") not the absolute path
