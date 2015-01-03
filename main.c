@@ -134,6 +134,10 @@ static bool exists(char *path) {
 }
 
 static int print_path_name(config *cfg, char *path_buf) {
+    if (path_buf[0] == '\0') {
+        path_buf[0] = '.';
+        path_buf[1] = '\0';
+    }
     if (cfg->relative) {
         printf("%s\n", path_buf);
     } else {
