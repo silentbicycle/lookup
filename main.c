@@ -29,7 +29,7 @@
 
 #define LOOKUP_VERSION_MAJOR 0
 #define LOOKUP_VERSION_MINOR 1
-#define LOOKUP_VERSION_PATCH 0
+#define LOOKUP_VERSION_PATCH 1
 #define LOOKUP_AUTHOR "Scott Vokes <vokes.s@gmail.com>"
 
 typedef struct {
