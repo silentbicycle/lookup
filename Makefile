@@ -3,7 +3,7 @@ OPTIMIZE =	-O3
 WARN =		-Wall -Wextra -pedantic
 #CDEFS +=
 #CINCS +=
-CSTD +=		-std=c99
+#CSTD +=	-std=c99
 CFLAGS +=	${CSTD} -g ${WARN} ${CDEFS} ${CINCS} ${OPTIMIZE}
 #LDFLAGS +=
 TEST_LDFLAGS +=
